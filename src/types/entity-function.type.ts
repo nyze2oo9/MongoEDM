@@ -1,3 +1,3 @@
-import { Entity } from '../interfaces/entity.interface';
+import { IEntity } from '../interfaces/entity.interface';
 
-export type EntityFunction = () => Entity;
+export type EntityFunction = () => IEntity;
