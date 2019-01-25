@@ -1,9 +1,10 @@
-import { IType } from "../interfaces/type.interface";
+import { IType } from '../interfaces/type.interface';
+import { EntityFunction } from '../types/entity-function.type';
 
 export class NestedMetaData {
   target: any;
   propertyKey: string;
-  typeFunction: () => any;
+  typeFunction: EntityFunction;
   types: IType[];
-  inverseRelation?: string;
+  // inverseRelation?: string;
 }

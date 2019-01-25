@@ -1,4 +1,6 @@
+import { EntityFunction } from '../types/entity-function.type';
+
 export class ChildEntityMetaData {
-  rootDocumentFunction?: () => any;
+  parentDocumentFunction?: EntityFunction | EntityFunction[];
   entity: new () => any;
 }

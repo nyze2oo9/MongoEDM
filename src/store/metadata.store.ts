@@ -5,10 +5,10 @@ import { EntityMetaData } from '../classes/entity-metadata.class';
 import { ChildEntityMetaData } from '../classes/child-entitiy-metadata.class';
 
 export class MetaDataStore {
-  static readonly entities: EntityMetaData[] = [];
-  static readonly childEntities: ChildEntityMetaData[] = [];
+  static entities: EntityMetaData[] = [];
+  static childEntities: ChildEntityMetaData[] = [];
 
-  static readonly fields: FieldMetaData[] = [];
-  static readonly nested: NestedMetaData[] = [];
-  static readonly relations: RelationMetaData[] = [];
+  static fields: FieldMetaData[] = [];
+  static nested: NestedMetaData[] = [];
+  static relations: RelationMetaData[] = [];
  }

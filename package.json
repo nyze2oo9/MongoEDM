@@ -6,11 +6,8 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "ts:node": "ts-node src/schema.ts",
-    "test": "mocha --require ts-node/register --project tsconfig.json test/**/*.test.ts",
-    "test::watch": "mocha --watch --watch-extensions ts --require ts-node/register --project tsconfig.json test/**/*.test.ts",
-    "build": "rm -rf ./dist && tsc",
-    "coverage": "npm run build && rm -rf ./coverage && nyc mocha",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "jest",
+    "build": "rm -rf ./dist && tsc"
   },
   "nyc": {
     "extension": [
@@ -34,21 +31,26 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.13"
   },
   "devDependencies": {
     "@types/chai": "^4.1.3",
+    "@types/jest": "^23.3.13",
     "@types/lodash": "^4.14.120",
     "@types/mocha": "^5.2.0",
+    "@types/mongodb": "^3.1.19",
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
     "istanbul": "v1.1.0-alpha.1",
+    "jest": "^23.6.0",
     "mocha": "^5.1.1",
     "nyc": "^12.0.2",
     "source-map-support": "^0.5.6",
+    "ts-jest": "^23.10.5",
     "ts-node": "^6.0.0",
-    "tslint": "^5.9.1",
+    "tslint": "^5.12.1",
     "tslint-config-airbnb": "^5.8.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   }
 }
